@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         redSpawnScore = Random.Range(1, targetScore); // picks 1 to 9
         bonusText.gameObject.SetActive(false);
         UpdateUI();

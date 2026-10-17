@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7947285
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,11 +70,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3826853
+      value: 1.023
       objectReference: {fileID: 0}
     - target: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.538
       objectReference: {fileID: 0}
     - target: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -107,8 +107,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4657447501875571786, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7105982370988620202}
   m_SourcePrefab: {fileID: 100100000, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+--- !u!1 &8046621899840016521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4657447501875571786, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+  m_PrefabInstance: {fileID: 3389455903005949123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7105982370988620202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046621899840016521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0f934a41c096f45a9c3b40f32204e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlueBall
+  spinSpeed: 90
 --- !u!4 &8295878546714530502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
