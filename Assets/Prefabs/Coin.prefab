@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5353516717134684375}
-  - component: {fileID: 3874965016823982806}
-  - component: {fileID: 8182611163364337842}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -34,41 +32,6 @@ Transform:
   - {fileID: 8295878546714530502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3874965016823982806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185955892779890873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aac7220a69b60d14e95944231a1878b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::coin
-  value: 1
-  spinSpeed: 90
---- !u!65 &8182611163364337842
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185955892779890873}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3389455903005949123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,6 +43,10 @@ PrefabInstance:
     - target: {fileID: 4657447501875571786, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_Name
       value: Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536228852779539421, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
       propertyPath: m_LocalScale.x
@@ -136,8 +103,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4657447501875571786, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8279947803649911187}
   m_SourcePrefab: {fileID: 100100000, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+--- !u!1 &8046621899840016521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4657447501875571786, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
+  m_PrefabInstance: {fileID: 3389455903005949123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8279947803649911187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046621899840016521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac7220a69b60d14e95944231a1878b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::coin
+  value: 1
+  spinSpeed: 90
 --- !u!4 &8295878546714530502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6640880607338507781, guid: 2513ef27919197d42ac61518c713d54e, type: 3}
