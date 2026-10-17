@@ -56,21 +56,15 @@ public class GameManager : MonoBehaviour
         Vector3 c = player.position;
         for (int i = 0; i < blueCount; i++)
         {
-            Vector3 pos;
-            do
-            {
-                Vector2 p = Random.insideUnitCircle * circleRadius;
-                pos = new Vector3(c.x + p.x, 0.5f, c.z + p.y);
-            }
-            while (Mathf.Abs(pos.x) > arenaLimit || Mathf.Abs(pos.z) > arenaLimit);
-
-            Instantiate(blueCoinPrefab, pos, Quaternion.identity);
+            float angle = i * Mathf.PI * 2f / blueCount;
+            float x = Mathf.Clamp(c.x + Mathf.Cos(angle) * circleRadius, -arenaLimit, arenaLimit);
+            float z = Mathf.Clamp(c.z + Mathf.Sin(angle) * circleRadius, -arenaLimit, arenaLimit);
+            Instantiate(blueCoinPrefab, new Vector3(x, 0.5f, z), Quaternion.identity);
         }
         blueCollected = 0;
         bonusText.gameObject.SetActive(true);
         UpdateBonusUI();
     }
-
     public void CollectBlueCoin()
     {
         blueCollected++;

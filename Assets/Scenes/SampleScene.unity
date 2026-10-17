@@ -226,7 +226,7 @@ MonoBehaviour:
   player: {fileID: 630533648}
   bonusText: {fileID: 1125552398}
   blueCount: 50
-  circleRadius: 8
+  circleRadius: 4
   arenaLimit: 7
 --- !u!4 &188921971
 Transform:
