@@ -6,7 +6,7 @@ public class spawnner : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] float interval = 1.5f;
     [SerializeField] int maxCoins = 5;
-    [SerializeField] float area = 7f;
+    [SerializeField] float area = 9f;
 
     void Start() => InvokeRepeating(nameof(SpawnCoin), 1f, interval);
 
@@ -15,7 +15,7 @@ public class spawnner : MonoBehaviour
         if (transform.childCount >= maxCoins) return;
         float x = Random.Range(-area, area);
         float z = Random.Range(-area, area);
-        Vector3 pos = new Vector3(x, 0.5f, z);
+        Vector3 pos = new Vector3(x, 0f, z);
         if (Vector3.Distance(pos, player.position) < 2f) return;
         Instantiate(coinPrefab, pos, Quaternion.identity, transform);
     }
