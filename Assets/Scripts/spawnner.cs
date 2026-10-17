@@ -4,9 +4,9 @@ public class spawnner : MonoBehaviour
 {
     [SerializeField] GameObject coinPrefab;
     [SerializeField] Transform player;
-    [SerializeField] float interval = 1.5f;
-    [SerializeField] int maxCoins = 5;
-    [SerializeField] float area = 14f;
+    [SerializeField] float interval = 2f;
+    [SerializeField] int maxCoins = 15;
+    [SerializeField] float area = 10f;
 
     void Start() => InvokeRepeating(nameof(SpawnCoin), 1f, interval);
 

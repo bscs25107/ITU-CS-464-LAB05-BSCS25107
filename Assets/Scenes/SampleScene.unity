@@ -1344,7 +1344,7 @@ MonoBehaviour:
   player: {fileID: 630533648}
   interval: 2
   maxCoins: 15
-  area: 5
+  area: 10
 --- !u!4 &986958867
 Transform:
   m_ObjectHideFlags: 0
